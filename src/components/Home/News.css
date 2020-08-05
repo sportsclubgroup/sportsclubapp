@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap');
+
+/* *{
+  box-sizing: border-box;
+} */
+/* body{
+  color: #262626;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  border: solid red;
+} */
+
+.news-ticker{
+  height: 45px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+
+.news-ticker h5{
+padding: 13px;
+background: rgb(209, 6, 6);
+color: #fff;
+font-weight: 800;
+font-size: 18px;
+width: 120px;
+margin: 0px;
+text-align: center;
+}
+
+.news-content{
+  background: rgb(59, 63, 59);
+  color: white;
+  font-size: 13px;
+  width: 100%;
+  text-align: left;
+  height: 50px;
+  overflow: hidden;
+}
+
+.news-content > div span{
+  padding: 13px 10px;
+  height: 50px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.news-content div:first-child{
+  animation: slide 10s linear infinite;
+}
+
+@keyframes slide{
+  0%{margin-top: -240px;}
+  5%{margin-top: -160px;}
+  35%{margin-top: -160px;}
+  40%{margin-top: -80px;}
+  65%{margin-top: -80px;}
+  70%{margin-top: 0px;}
+  99.99%{margin-top: 0px;}
+  100%{margin-top: -240px;}
+}

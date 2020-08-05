@@ -1,0 +1,104 @@
+.m-section img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 65vh;
+    width: 100%;
+}
+
+.ms-container{
+    position: relative;
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    height: 65vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    /* border: solid red; */
+}
+
+.ms-container h4{
+    border: solid rgb(62, 66, 62);
+    margin-top: 30px;
+    margin-left: 23px;
+    background: rgb(55, 58, 51, 0.8);
+    box-shadow: 0px 0px 10px 3px rgb(107, 156, 107);
+    width: 90%;
+    text-align: center;
+}
+
+ /* .left-container{
+    border: solid yellow;
+ } */
+.left-container table{
+    background-color: rgba(12, 6, 44, 0.7);
+    width: 90%;
+    margin: 25px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px 3px rgb(107, 156, 107);
+}
+.left-team{
+    float: left;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.right-team{
+    float: right;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+/* .right-container{
+    border: solid pink;
+} */
+.right-container table{
+    background-color: rgb(12, 6, 44, 0.7);
+    box-shadow: 0px 0px 10px 3px rgb(107, 156, 107);
+    width: 90%;
+    margin: 25px;
+    padding: 20px;
+}
+.ms-op{
+    text-align: center;
+    padding-top: 20px;
+    /* color: red;  */
+}
+
+.ms-date{
+    color: white;
+    margin: 20px 40px;
+}
+@media (min-width: 769px) and (max-width: 912px){
+    /* still to set */
+    .ms-container{
+        height: 80vh;
+    }
+    .m-section img{
+        height: 80vh;
+    }
+    .left-team{
+        float: left;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .right-team{
+        float: right;
+        padding-top: 10px;
+        padding-right: 10px;
+    }
+}
+@media (max-width: 768px){
+    
+    .ms-container h4{
+        margin-left: 23px;
+    }
+    .ms-container{
+        grid-template-columns: 100%;
+        height: 160vh;
+    }
+    .m-section img{
+        height: 160vh;
+    }
+}
