@@ -3,7 +3,7 @@ import './Home.css';
 import Ground from '../../assets/background/hero-1.jpg';
 import News from './News';
 import NextMatch from './Match update/Nextmatch';
-import Ranking from './Ranking/Ranking';
+// import Ranking from './Ranking/Ranking';
 import { Button } from 'reactstrap';
 
 import { connect } from 'react-redux';
@@ -34,7 +34,7 @@ class Home extends Component {
 
                 <span> <News /> </span>
                 <div> <NextMatch /> </div>
-                <div> <Ranking /> </div>
+                {/* <div> <Ranking /> </div> */}
             </div>
 
             </>
@@ -52,7 +52,7 @@ class Home extends Component {
 
                 <span> <News /> </span>
                 <div> <NextMatch /> </div>
-                <div> <Ranking /> </div>
+                {/* <div> <Ranking /> </div> */}
             </div>
             </>
         );

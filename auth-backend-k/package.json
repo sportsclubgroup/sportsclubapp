@@ -1,5 +1,5 @@
 {
-  "name": "auth-backend-k",
+  "name": "backend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -14,12 +14,12 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.27",
-    "nodemailer": "^6.4.11",
+    "mongoose": "^5.9.25",
+    "nodemailer": "^6.4.10",
     "nodemon": "^2.0.4",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -41,5 +41,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "Kavitha",
+  "license": "ISC"
 }

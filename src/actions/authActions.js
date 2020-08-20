@@ -10,9 +10,13 @@ import {
     REGISTER_SUCCESS,
     REGISTER_FAIL
 } from './types';
+import setAuthToken from '../utils/setAuthToken';
 
 // Check token and load user
 export const loadUser = () => (dispatch, getState) => {
+    if (localStorage.token) { 
+        setAuthToken(localStorage.token);
+    }
     // User loading
     dispatch({ type: USER_LOADING });
 
@@ -47,8 +51,9 @@ export const register = ({ name, email, password }) => dispatch => {
         .then(res => dispatch({
             type: REGISTER_SUCCESS,
             payload: res.data
-        })
-        )
+        })   
+    )
+    
         .catch(err => {
             dispatch(
                 returnErrors(err.response.data, err.response.status, 'REGISTER_FAIL')
@@ -57,6 +62,7 @@ export const register = ({ name, email, password }) => dispatch => {
                 type: REGISTER_FAIL
             });
         });
+        loadUser();
 };
 
 
@@ -97,7 +103,7 @@ export const logout = () => {
 //Setup config/headers and token
 export const tokenConfig = getState => {
 
-    //Get token from loacalstorage
+    //Get token from localstorage
     const token = getState().auth.token;
 
     //Headers 

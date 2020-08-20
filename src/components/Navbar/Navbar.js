@@ -4,8 +4,6 @@ import DrawerToggleButton from '../SideDrawer/DrawerToggleButton';
 import Logo from '../../assets/logo/logo.svg'
 import './Navbar.css';
 import Logout from '../Auth/Logout';
-
-
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
@@ -28,7 +26,7 @@ class navbar extends Component {
         const authLinks = (
             <>
                 <div className="navbar_navigation-items">
-                    <NavLink to ="/PlayerProfile"></NavLink>                  
+                    <NavLink to ="Auth/PlayerProfile"></NavLink>                  
                     <Logout />
                 </div>
 
@@ -58,7 +56,7 @@ class navbar extends Component {
                         <div className="navbar_logo"><Link to="/"><img src={Logo} alt="logo"></img></Link></div>
                         {
                             user ? <div className="username">
-                                {`Welcome ${user.name}`} <Redirect to='../Auth/PlayerProfile/id=1' />
+                                {`Welcome ${user.name}`} <Redirect to='/Auth/PlayerProfile/' />
                             </div> : ''
                         }
                         <div className="spacer-b" />
@@ -68,9 +66,11 @@ class navbar extends Component {
                                 <li><NavLink to="/club">Club</NavLink></li>
                                 <li><NavLink to="/fixture">Fixture</NavLink></li>
                                 <li><NavLink to="/players">Players</NavLink></li>
+                                <li><NavLink to="/Auth/PlayerProfile">PlayerProfile</NavLink></li>
                                 <li><NavLink to="/gallery">Gallery</NavLink></li>
                                 <li><NavLink to="/contact">Contact</NavLink></li>
-
+                                <li><NavLink to="/feedback">Feedback</NavLink></li>
+                                <li><NavLink to="/display">dFeedback</NavLink></li>
                             </ul>
 
                         </div>

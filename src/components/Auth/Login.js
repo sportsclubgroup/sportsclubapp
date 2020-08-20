@@ -66,7 +66,8 @@ const Login = ({ auth, error, login, clearErrors }) => {
 
 const mapStateToProps = state => ({
     isAuthenticated: state.auth.isAuthenticated,
-    error: state.error
+    error: state.error,
+    auth: state.auth
 });
 
 export default connect(mapStateToProps, {login, clearErrors })(Login);

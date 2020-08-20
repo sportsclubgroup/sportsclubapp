@@ -55,18 +55,14 @@ router.post('/', (req, res) => {
 
 });
 
-router.get('../../../src/components/Auth/PlayerProfile', auth,  (req, res) => {
-    res.render('PlayerProfile', { title: 'Profile' })
-});
-
 // @route GET api/loginauth/user
 // @desc  GET user data
 // @access Private
-
-// router.get('/user', auth, (req, res) => {
-//     User.findById(req.user.id)
-//         .select('-password')
-//         .then(user => res.json(user));
-// });
+// Get current user's data using token
+router.get('/user', auth, (req, res) => {
+    User.findById(req.user.id)
+        .select('-password')
+        .then(user => res.json(user));
+});
 
 module.exports = router;

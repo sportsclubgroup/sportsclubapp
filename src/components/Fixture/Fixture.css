@@ -1,0 +1,68 @@
+.grid{
+    background-color:rgb(129, 167, 165);
+  padding: 10px; 
+ border-radius: 10px;
+ margin:0.5rem;
+
+}
+.grid:hover{
+   box-shadow:5px 10px 20px 1px rgba(0,0,0,0.253)!important
+}
+
+.row{
+   display: flex;
+  
+}
+.time-col{
+
+ height: 100%;
+    padding: 0.2rem 0 1rem 2.8rem;
+    font-size: 1.2rem;
+    border-right: 2px solid #fbc02d;   
+    transform: skewX(-10deg);
+    background-color:rgb(62, 139, 136);
+    color:orange
+}
+.teams{
+    
+    margin-left:5rem;
+    margin-right: 2rem;
+
+}
+.team_name{
+  
+    height: 15px;
+}
+.btn-col{
+    border-right: 5px solid #fbc02d; 
+   
+}
+ 
+
+
+
+.match-details_btn{
+display: inline-block;
+border-style:none !important;
+  background-color: orange !important;
+  height: 40px;
+  width: 120px;
+  font-size: 1px;
+  padding: 1px;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  animation: skew 3s infinite;
+  transform: skew(20deg);
+  animation-direction: alternate;
+  opacity: .7;
+}
+
+@keyframes skew {
+  0% {
+    transform: skewX(20deg);
+  }
+  100% {
+    transform: skewX(-20deg);
+  }
+}

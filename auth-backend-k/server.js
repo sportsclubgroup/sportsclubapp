@@ -9,6 +9,9 @@ const app = express();
 //Bodyparser Middleware
 app.use(express.json());
 
+var cors = require('cors');
+app.use(cors());
+
 //Connect to Mongo
 mongoose.connect("mongodb://localhost/sportsclub",{ useNewUrlParser: true, useCreateIndex:true,useUnifiedTopology: true})
 .then(() => console.log('MongoDB Connected...'))

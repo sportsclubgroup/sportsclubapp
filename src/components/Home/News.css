@@ -29,9 +29,9 @@ text-align: center;
 }
 
 .news-content{
-  background: rgb(59, 63, 59);
-  color: white;
-  font-size: 13px;
+  background: rgb(59, 141, 59);
+  /* color: white; */
+  font-size: 15px;
   width: 100%;
   text-align: left;
   height: 50px;
@@ -43,6 +43,7 @@ text-align: center;
   height: 50px;
   margin-bottom: 30px;
   display: block;
+  color: white;
 }
 
 .news-content div:first-child{
